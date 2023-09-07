@@ -1,0 +1,118 @@
+*{
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+font-family: "Ubuntu", sans-serif;
+text-decoration: none;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(profile_img/bg.jpg) no-repeat center;
+    background-size: cover;
+}
+.container{
+    width: 400px;
+    text-align: center;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.up{
+    padding: 60px 40px;
+    background: #2c3a47;
+}
+.pic img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.pic{
+    display: inline-block;
+    padding: 8px;
+    background: linear-gradient(130deg, #74b9ff, #e66767);
+    margin: auto;
+    border-radius: 50%;
+    background-size: 200% 200%;
+    animation: animated-gradient 2s linear infinite;
+}
+@keyframes  animated-gradient{
+    25%{
+        background-position: left bottom;
+    }
+
+    50%{
+        background-position:right bottom;
+    }
+    75%{
+        background-position:right top;
+    }
+    100%{
+        background-position: left top;
+    }
+}
+.name{
+    color: white;
+    font-size: 28px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.jop{
+    color: #e66767;
+    font-size: 18px;
+}
+.social{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+.social a{
+    font-size: 22px;
+    color: #f2f2f2;
+    width: 56px;
+    transition: 0.3s linear;
+}
+.social a:hover{
+    color:#e66767;
+}
+.btn {
+    display: inline-block;
+    border: 2px solid #e66767;
+    border-radius: 6px;
+    padding: 12px 50px;
+    color: #e66767;
+    margin-top: 16px;
+    transition: 0.3s linear;
+}
+.btn:hover{
+    color: #f2f2f2;
+    background-color: #e66767;
+}
+.down{
+    background: #f2f2f2;
+    padding: 60px 10px;
+}
+.numbers{
+    display: flex;
+    align-items: center;
+}
+.item{
+    flex: 1;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #e66767;
+}
+
+.item span{
+    display: block;
+    color: #2c3a47;
+    font-size: 30px;
+}
+
+.border{
+    width: 1px;
+    height: 30px;
+    background: #bbb;
+}
